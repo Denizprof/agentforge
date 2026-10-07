@@ -70,6 +70,38 @@ Current Agent Readiness Score: 100/100
 
 > **Note:** The `init` command overwrites existing `.agentignore`, `AGENTS.md`, `CLAUDE.md`, and `CODEX.md` files to ensure they are up to date. It does not overwrite user-authored skill definitions.
 
+## Install in Claude Code
+
+AgentForge ships as a Claude Code plugin. Inside a Claude Code session:
+
+```text
+/plugin marketplace add Denizprof/agentforge
+/plugin install agentforge@agentforge
+```
+
+Or from a terminal:
+
+```bash
+claude plugin marketplace add Denizprof/agentforge
+claude plugin install agentforge@agentforge
+```
+
+After a restart or reload, the plugin provides `/agentforge:init`, `/agentforge:scan`, and `/agentforge:score`. These commands run the CLI through `npx -y @denizprof/agentforge`, so they require the package to be published on npm.
+
+### Run from source
+
+To use AgentForge without npm, clone the repository and link the CLI:
+
+```bash
+git clone https://github.com/Denizprof/agentforge.git
+cd agentforge
+npm install
+npm run build
+npm link
+```
+
+`agentforge init`, `agentforge scan`, and `agentforge score` are then available from any project folder.
+
 ## Command Reference
 
 | Command | Description |
