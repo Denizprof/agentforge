@@ -2,9 +2,8 @@
   "name": "agentforge",
   "version": "0.1.0",
   "description": "AgentForge: Infrastructure, Token Optimization, and Security Scanner for AI Agents",
-  "commands": {
-    "agentforge-init": "npx -y @denizprof/agentforge init",
-    "agentforge-scan": "npx -y @denizprof/agentforge scan",
-    "agentforge-score": "npx -y @denizprof/agentforge score"
-  }
+  "author": { "name": "Daniel Deniz Akıncı" },
+  "homepage": "https://github.com/Denizprof/agentforge",
+  "repository": "https://github.com/Denizprof/agentforge",
+  "license": "MIT"
 }

@@ -1,0 +1,12 @@
+{
+  "name": "agentforge",
+  "description": "AgentForge plugin marketplace",
+  "owner": { "name": "Daniel Deniz Akıncı" },
+  "plugins": [
+    {
+      "name": "agentforge",
+      "source": "./",
+      "description": "AgentForge: Infrastructure, Token Optimization, and Security Scanner for AI Agents"
+    }
+  ]
+}
